@@ -10,19 +10,20 @@
     </style>
   </head>
   <body>
-    <div id="panorama"></div>
-    <script>
-  pannellum.viewer('panorama', {
-  "type": "equirectangular",
-  "panorama": "https://i.ibb.co/1YQ9D5px/DJI-0018.jpg",
-  "autoLoad": true,
-  "autoRotate": -2,
-  "showControls": true,
-  "hfov": 110,
-  "pitch": 0,
-  "yaw": 0,
-  "showFullscreenCtrl": true
-});
+    <div id="loading">Clique para carregar</div>
+<div id="panorama" style="display:none;"></div>
+<script>
+  document.getElementById("loading").onclick = function() {
+    document.getElementById("loading").style.display = "none";
+    document.getElementById("panorama").style.display = "block";
+    pannellum.viewer('panorama', {
+      "type": "equirectangular",
+      "panorama": "https://i.ibb.co/1YQ9D5px/DJI-0018.jpg",
+      "autoLoad": true,
+      "autoRotate": -2,
+      "showControls": true
+    });
+  };
 </script>
 
   </body>
