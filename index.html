@@ -12,13 +12,17 @@
   <body>
     <div id="panorama"></div>
     <script>
-      pannellum.viewer('panorama', {
-        "type": "equirectangular",
-        "panorama": "https://i.ibb.co/1YQ9D5px/DJI-0018.jpg",
-        "autoLoad": true,
-        "autoRotate": -2,
-        "showControls": true
-      });
-    </script>
+  pannellum.viewer('panorama', {
+    "type": "equirectangular",
+    "panorama": "https://i.ibb.co/1YQ9D5px/DJI-0018.jpg",
+    "autoLoad": true,
+    "autoRotate": -2,
+    "showControls": true,
+    "hfov": 110,
+    "pitch": 0,
+    "yaw": 0
+  });
+</script>
+
   </body>
 </html>
