@@ -1,30 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Panorama 360 - Camila</title>
-    <script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
-    <link rel="stylesheet" href="https://cdn.pannellum.org/2.5/pannellum.css"/>
+    <title>360 View do ImgBB</title>
     <style>
-      html, body { margin: 0; height: 100%; }
-      #panorama { width: 100%; height: 100vh; }
+      html, body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+      iframe {
+        width: 100%;
+        height: 100vh;
+        border: none;
+      }
     </style>
   </head>
   <body>
-    <div id="loading">Clique para carregar</div>
-<div id="panorama" style="display:none;"></div>
-<script>
-  document.getElementById("loading").onclick = function() {
-    document.getElementById("loading").style.display = "none";
-    document.getElementById("panorama").style.display = "block";
-    pannellum.viewer('panorama', {
-      "type": "equirectangular",
-      "panorama": "https://i.ibb.co/1YQ9D5px/DJI-0018.jpg",
-      "autoLoad": true,
-      "autoRotate": -2,
-      "showControls": true
-    });
-  };
-</script>
-
+    <iframe src="https://ibb.co/gb9D5pXC" allowfullscreen></iframe>
   </body>
 </html>
+
